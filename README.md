@@ -1,2 +1,2 @@
-# NetSync-Visability
- NetSync Visability prefab for VRChat
+# NetSync-Visibility
+ NetSync Visibility prefab for VRChat
