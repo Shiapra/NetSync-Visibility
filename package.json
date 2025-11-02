@@ -8,5 +8,9 @@
   "author": {
     "name": "Shiapra"
   },
+  "vpmDependencies":{
+    "com.vrchat.avatars": "^3.8.x",
+    "com.vrcfury.vrcfury": "^1.1250.x"
+  },
   "hideInEditor": false
 }
