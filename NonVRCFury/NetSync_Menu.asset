@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: NetSync_Menu
+  m_EditorClassIdentifier: 
+  Parameters: {fileID: 11400000, guid: a794c51a60c907ce5bf9247db6733a0c, type: 2}
+  controls:
+  - name: Off
+    icon: {fileID: 2800000, guid: 4f62c6e6d367a674fbc8d62506572acf, type: 3}
+    type: 101
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: All
+    icon: {fileID: 2800000, guid: 072cc326ee24a4cbb8d8afaad00d425a, type: 3}
+    type: 101
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Local Only
+    icon: {fileID: 2800000, guid: 9319dfab02dea5b67a7ad72d69968816, type: 3}
+    type: 101
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Friends Only
+    icon: {fileID: 2800000, guid: fd227e07ca344985fb20d5de6ed47948, type: 3}
+    type: 101
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Secret Mode
+    icon: {fileID: 2800000, guid: 42ebb8fd571b05ba0982b991c841fedf, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: f0a5bd8210dbee1d984cef7aef5ca794, type: 2}
+    subParameters: []
+    labels: []
