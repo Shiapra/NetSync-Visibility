@@ -370,7 +370,6 @@ GameObject:
   - component: {fileID: 262562496213286128}
   - component: {fileID: 6994454578682580359}
   - component: {fileID: 4506986938004415757}
-  - component: {fileID: 1363654759524654757}
   m_Layer: 0
   m_Name: Toggles
   m_TagString: Untagged
@@ -1077,91 +1076,6 @@ MonoBehaviour:
           id: 42ebb8fd571b05ba0982b991c841fedf|Packages/com.shiapra.netsync/Assets/Icons/NetSync
             Icon Secret Mode.png
           objRef: {fileID: 2800000, guid: 42ebb8fd571b05ba0982b991c841fedf, type: 3}
---- !u!114 &1363654759524654757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9129034151085281484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 3
-  unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1252.0
-  somethingIsBroken: 0
-  config:
-    features: []
-  content:
-    rid: 4929651745309327870
-  references:
-    version: 2
-    RefIds:
-    - rid: 4929651745309327870
-      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
-      data:
-        version: 3
-        name: NetSync/Secret Mode/Test Auto Sync
-        state:
-          actions: []
-        saved: 0
-        slider: 0
-        sliderInactiveAtZero: 0
-        securityEnabled: 0
-        defaultOn: 0
-        includeInRest: 0
-        exclusiveOffState: 0
-        enableExclusiveTag: 0
-        exclusiveTag: NetSync_S
-        resetPhysbones: []
-        hasExitTime: 0
-        enableIcon: 1
-        icon:
-          version: 1
-          fileID: 0
-          guid: 
-          id: c3eaa94d0ac482491be165ffd14fc706|Packages/com.shiapra.netsync/Assets/Icons/NetSync
-            Icon Secret Send.png
-          objRef: {fileID: 2800000, guid: c3eaa94d0ac482491be165ffd14fc706, type: 3}
-        enableDriveGlobalParam: 0
-        driveGlobalParam: 
-        separateLocal: 1
-        localState:
-          actions:
-          - rid: 4929651745309327882
-        hasTransition: 0
-        transitionStateIn:
-          actions: []
-        transitionStateOut:
-          actions: []
-        transitionTimeIn: 0
-        transitionTimeOut: 0
-        localTransitionStateIn:
-          actions: []
-        localTransitionStateOut:
-          actions: []
-        localTransitionTimeIn: 0
-        localTransitionTimeOut: 0
-        simpleOutTransition: 1
-        defaultSliderValue: 0
-        useGlobalParam: 1
-        globalParam: NetSync_Secret_Listen
-        holdButton: 0
-        invertRestLogic: 0
-        expandIntoTransition: 1
-    - rid: 4929651745309327882
-      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
-      data:
-        version: 1
-        desktopActive: 0
-        androidActive: 0
-        localOnly: 0
-        remoteOnly: 0
-        obj: {fileID: 1951243668983531249}
-        mode: 0
 --- !u!1001 &3803367281646870404
 PrefabInstance:
   m_ObjectHideFlags: 0
