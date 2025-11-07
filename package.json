@@ -1,7 +1,7 @@
 {
   "name": "com.shiapra.netsync",
   "displayName": "Shiapra - NetSync Visibility",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "NetSync Visibility Prefab for VRChat",
   "unity": "2022.3",
   "documentationUrl": "https://docs.shia.gay/netsync",
@@ -10,7 +10,7 @@
   },
   "vpmDependencies":{
     "com.vrchat.avatars": "^3.8.x",
-    "com.vrcfury.vrcfury": "^1.1250.x"
+    "com.vrcfury.vrcfury": "^1.1265.x"
   },
   "hideInEditor": false
 }
