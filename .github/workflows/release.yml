@@ -30,7 +30,7 @@ jobs:
     permissions:
       contents: write
     env:
-      packagePath: ${{ vars.PACKAGE_NAME }}
+      packagePath: /${{ vars.PACKAGE_NAME }}
     if: needs.config.outputs.config_package == 'true'
     steps:
 
@@ -41,7 +41,7 @@ jobs:
       - name: Move package files
         run: |
           mkdir "${{ env.packagePath }}/"
-          cp -r !("${{ env.packagePath }}/") "${{ env.packagePath }}/"
+          cp -r * "${{ env.packagePath }}/"
           find "${{ env.packagePath }}/" -name ".git*" -exec rm -r {} +
 
       # Get the Package version based on the package.json file
