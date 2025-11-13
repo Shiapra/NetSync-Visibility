@@ -30,19 +30,26 @@ jobs:
     permissions:
       contents: write
     env:
-      packagePath: /${{ vars.PACKAGE_NAME }}
+      packagePath: ${{ vars.PACKAGE_NAME }}
     if: needs.config.outputs.config_package == 'true'
     steps:
 
-      # Checkout Local Repository
+      - name: Make Package Dir
+        run: mkdir "${{ env.packagePath }}"
+
+      # Checkout Local Repository for building package
+      - name: Checkout
+        working-directory: "${{ env.packagePath }}"
+        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac
+
+        # Checkout Local Repository
       - name: Checkout
         uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac
 
+      # Remove git files from package checkout
       - name: Move package files
-        run: |
-          mkdir "${{ env.packagePath }}/"
-          cp -r * "${{ env.packagePath }}/"
-          find "${{ env.packagePath }}/" -name ".git*" -exec rm -r {} +
+        working-directory: "${{ env.packagePath }}"
+        run: find . -name ".git*" -exec rm -r {} +
 
       # Get the Package version based on the package.json file
       - name: Get Version
@@ -78,6 +85,7 @@ jobs:
       # Make a release tag of the version from the package.json file
       - name: Create Tag
         id: tag_version
+        working-directory: "${{ env.packagePath }}"
         uses: rickstaa/action-create-tag@88dbf7ff6fe2405f8e8f6c6fdfd78829bc631f83
         with:
           tag: "${{ env.version }}"
