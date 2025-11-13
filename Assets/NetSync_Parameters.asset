@@ -31,17 +31,17 @@ MonoBehaviour:
     networkSynced: 1
   - name: NetSync_Local
     valueType: 2
-    saved: 1
+    saved: 0
     defaultValue: 0
     networkSynced: 1
   - name: NetSync_Friends
     valueType: 2
-    saved: 1
+    saved: 0
     defaultValue: 0
     networkSynced: 1
   - name: NetSync_Secret
     valueType: 2
-    saved: 1
+    saved: 0
     defaultValue: 0
     networkSynced: 1
   - name: NetSync_Secret_Listen
@@ -76,7 +76,7 @@ MonoBehaviour:
     networkSynced: 1
   - name: NeySync_Secret_Auto_Listen
     valueType: 2
-    saved: 1
+    saved: 0
     defaultValue: 0
     networkSynced: 1
   - name: NetSync_Secret_Auto_Received
