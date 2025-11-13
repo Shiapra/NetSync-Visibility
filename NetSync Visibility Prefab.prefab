@@ -683,7 +683,7 @@ MonoBehaviour:
         name: NetSync/Local
         state:
           actions: []
-        saved: 0
+        saved: 1
         slider: 0
         sliderInactiveAtZero: 0
         securityEnabled: 0
@@ -757,7 +757,7 @@ MonoBehaviour:
         name: NetSync/Friends
         state:
           actions: []
-        saved: 0
+        saved: 1
         slider: 0
         sliderInactiveAtZero: 0
         securityEnabled: 0
@@ -833,7 +833,7 @@ MonoBehaviour:
           actions:
           - rid: 4929651745309327881
           - rid: 6137261876941684795
-        saved: 0
+        saved: 1
         slider: 0
         sliderInactiveAtZero: 0
         securityEnabled: 0
