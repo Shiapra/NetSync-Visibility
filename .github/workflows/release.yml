@@ -54,7 +54,7 @@ jobs:
           echo "version=${{ steps.version.outputs.value }}" >> $GITHUB_ENV
 
       - name: Remove Git Files
-        run: find "${{ env.packagePath }}/" -name ".git*" -delete
+        run: find "${{ env.packagePath }}/" -name ".git*" -exec rm -r {} +
 
       # Zip the Package for release
       - name: Create Package Zip
