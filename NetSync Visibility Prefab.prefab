@@ -1,5 +1,116 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &87105643541956428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8610981789727160499}
+  - component: {fileID: 3613118505560537932}
+  m_Layer: 0
+  m_Name: Secret Alert Sender
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8610981789727160499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87105643541956428}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7031180389619154582}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3613118505560537932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87105643541956428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -802764141, guid: 80f1b8067b0760e4bb45023bc2e9de66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootTransform: {fileID: 0}
+  shapeType: 0
+  radius: 1.5
+  height: 2
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  localOnly: 0
+  collisionTags:
+  - NetSync_Secret_Alert
+--- !u!1 &387414010057054524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4393156383980933369}
+  - component: {fileID: 791613256190714965}
+  m_Layer: 0
+  m_Name: Secret Alert Receiver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4393156383980933369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387414010057054524}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7031180389619154582}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &791613256190714965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387414010057054524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1450912254, guid: 80f1b8067b0760e4bb45023bc2e9de66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootTransform: {fileID: 0}
+  shapeType: 0
+  radius: 0.5
+  height: 2
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  localOnly: 0
+  collisionTags:
+  - NetSync_Secret_Alert
+  allowSelf: 0
+  allowOthers: 1
+  receiverType: 0
+  parameter: NetSync_Secret_Alert
+  minVelocity: 0.05
 --- !u!1 &1951243668983531249
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +425,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2357715755567863539}
+  - {fileID: 8610981789727160499}
   - {fileID: 2408832737845324086}
+  - {fileID: 4393156383980933369}
   m_Father: {fileID: 4995396345991179017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8716341259767383743
@@ -741,9 +854,10 @@ MonoBehaviour:
           objRef: {fileID: 2800000, guid: 42ebb8fd571b05ba0982b991c841fedf, type: 3}
         enableDriveGlobalParam: 0
         driveGlobalParam: 
-        separateLocal: 0
+        separateLocal: 1
         localState:
-          actions: []
+          actions:
+          - rid: 6137261992385970204
         hasTransition: 0
         transitionStateIn:
           actions: []
@@ -784,6 +898,16 @@ MonoBehaviour:
         remoteOnly: 0
         obj: {fileID: 2199780274736938220}
         mode: 0
+    - rid: 6137261992385970204
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 387414010057054524}
+        mode: 0
 --- !u!114 &1802146593023970310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,7 +937,8 @@ MonoBehaviour:
         version: 3
         name: NetSync/Secret Mode/Send Secret
         state:
-          actions: []
+          actions:
+          - rid: 6137261992385970203
         saved: 0
         slider: 0
         sliderInactiveAtZero: 0
@@ -868,6 +993,16 @@ MonoBehaviour:
         localOnly: 0
         remoteOnly: 0
         obj: {fileID: 1951243668983531249}
+        mode: 0
+    - rid: 6137261992385970203
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 87105643541956428}
         mode: 0
 --- !u!114 &3347899294145344201
 MonoBehaviour:
