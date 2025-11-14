@@ -100,10 +100,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-     steps:
-       - name: Repository Dispatch
-         uses: peter-evans/repository-dispatch@v4
-         with:
-          token: ${{ secrets.PAT }}
-          repository: Shiapra/Free-VPM-Packages
-          event-type: package-update
+    steps:
+    - name: Repository Dispatch
+      uses: peter-evans/repository-dispatch@v4
+      with:
+        token: ${{ secrets.PAT }}
+        repository: Shiapra/Free-VPM-Packages
+        event-type: package-update
