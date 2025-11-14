@@ -95,3 +95,15 @@ jobs:
             ${{ env.unityPackage }}
             ${{ env.packagePath }}/package.json
           tag_name: ${{ env.version }}
+
+  Dispatch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+     steps:
+       - name: Repository Dispatch
+         uses: peter-evans/repository-dispatch@v4
+         with:
+          token: ${{ secrets.PAT }}
+          repository: Shiapra/Free-VPM-Packages
+          event-type: package-update
