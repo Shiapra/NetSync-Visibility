@@ -89,3 +89,18 @@ or add it manually with the same URL
 You will need the VRCFury Repository too, so if you get an error, check that it’s on your VCC
 
 It can be added by visiting https://vrcfury.com/download or adding https://vcc.vrcfury.com to your VCC
+
+# Can I use this in a product?
+Yes! You are welcome to use NetSync Vsibility in your product!
+
+Ideally the end user should be directed to add NetSync Visibility to their project via the VCC URL, and modifications/additions you make should be additive to the base NetSync Visibility animator & Prefabs.
+
+Please credit the NetSync Visibility project on your product page if you use it in your product!
+
+## Some things to keep in mind
+Please keep your modified versions of NetSync Visibility compatible with the NetSync Visibility Project. The goal of this system is to create a unified tool to sync with others in game, this becomes very difficult if your fork becomes incompatible with everyone elses!
+
+If you wish to integrate the controls into your own menus rather than use the included menu, please maintain feature parity. 
+
+The License for NetSync Visibility is Copyleft, any modifications you make should be available to the project. Please just fork this repository and commit your changes to your fork. If you're unfamiliar with github and forking, please just provide a copy of the modified animator, menus and prefabs if asked.
+
