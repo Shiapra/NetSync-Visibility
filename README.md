@@ -28,7 +28,16 @@ For further protection, by default secrets are restricted to friends only, you c
 - Senders: 1
 - Receivers: 1
 
----
+# How do I Get this?
+I've made a free repo for the Creator Companion!
+
+Just add it to your VCC by going to: https://vcc.shia.gay/free
+or add it manually with the same URL
+
+## VRCFury
+You will need the VRCFury Repository too, so if you get an error, check that it’s on your VCC
+
+It can be added by visiting https://vrcfury.com/download or adding https://vcc.vrcfury.com to your VCC
 
 # Setting Up in Unity
 
@@ -76,19 +85,6 @@ If this becomes an issue for you, or breaks certain prefabs, please make an issu
 
 ## Nothing Visible?
 Check to make sure the objects you're trying to toggle don't already have another toggle to enable or disable them, you might need to enable that toggle too, or remove it in unity.
-
----
-
-# How do I Get this?
-I've made a free repo for the Creator Companion!
-
-Just add it to your VCC by going to: https://vcc.shia.gay/free
-or add it manually with the same URL
-
-## VRCFury
-You will need the VRCFury Repository too, so if you get an error, check that it’s on your VCC
-
-It can be added by visiting https://vrcfury.com/download or adding https://vcc.vrcfury.com to your VCC
 
 # Can I use this in a product?
 Yes! You are welcome to use NetSync Vsibility in your product!
