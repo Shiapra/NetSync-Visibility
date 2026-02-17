@@ -31,6 +31,8 @@ For further protection, by default secrets are restricted to friends only, you c
 # How do I Get this?
 I've made a free repo for the Creator Companion!
 
+[![Add to VCC](https://github.com/user-attachments/assets/f775fb9d-2d3b-4b23-aee9-9ca1d52ada1b)](https://vcc.shia.gay/free)
+
 Just add it to your VCC by going to: https://vcc.shia.gay/free
 or add it manually with the same URL
 
@@ -40,6 +42,7 @@ You will need the VRCFury Repository too, so if you get an error, check that itâ
 It can be added by visiting https://vrcfury.com/download or adding https://vcc.vrcfury.com to your VCC
 
 # Setting Up in Unity
+https://github.com/user-attachments/assets/e7e09ab5-b5bd-4a52-b82c-0ef74882b83f
 
 After you've added the prefab to your project, nativate to ```Packages > Shiapra - NetSync Visibility``` in your Project Files, then drag and drop the ```NetSync Visibility Prefab``` onto your Avatar.
 
@@ -77,7 +80,6 @@ If the toggle is a VRCFury toggle, you can do this by modifying the toggle to us
 Please note that this parameter is always being driven, so it can not be disabled outside of the NetSync Menu
 
 # Usage in Game
-
 You will find a new menu called ```NetSync``` with all the visibility settings.
 
 Changing between settings will cause all objects to breifly be disabled and re-enabled, this is intentional to make sure the NetSync_Toggle Boolean is always being written to & to avoid more complex logic that might break.
