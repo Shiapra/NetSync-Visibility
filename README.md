@@ -42,9 +42,9 @@ You will need the VRCFury Repository too, so if you get an error, check that itâ
 It can be added by visiting https://vrcfury.com/download or adding https://vcc.vrcfury.com to your VCC
 
 # Setting Up in Unity
-https://github.com/user-attachments/assets/e7e09ab5-b5bd-4a52-b82c-0ef74882b83f
+https://github.com/user-attachments/assets/c9cf2d09-d8ed-4b35-924c-ecc0daf7b4bd
 
-After you've added the prefab to your project, nativate to ```Packages > Shiapra - NetSync Visibility``` in your Project Files, then drag and drop the ```NetSync Visibility Prefab``` onto your Avatar.
+After you've added the prefab to your project, navigate to ```Packages > Shiapra - NetSync Visibility``` in your Project Files, then drag and drop the ```NetSync Visibility Prefab``` onto your Avatar.
 
 Then Just drop whatever you want to hide under ```NetSync Visibility Prefab > NetSync Object``` on your avatar! 
 
