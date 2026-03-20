@@ -28,11 +28,23 @@ For further protection, by default secrets are restricted to friends only, you c
 - Senders: 1
 - Receivers: 1
 
----
+# How do I Get this?
+I've made a free repo for the Creator Companion!
+
+[![Add to VCC](https://github.com/user-attachments/assets/f775fb9d-2d3b-4b23-aee9-9ca1d52ada1b)](https://vcc.shia.gay/free)
+
+Just add it to your VCC by going to: https://vcc.shia.gay/free
+or add it manually with the same URL
+
+## VRCFury
+You will need the VRCFury Repository too, so if you get an error, check that it’s on your VCC
+
+It can be added by visiting https://vrcfury.com/download or adding https://vcc.vrcfury.com to your VCC
 
 # Setting Up in Unity
+https://github.com/user-attachments/assets/c9cf2d09-d8ed-4b35-924c-ecc0daf7b4bd
 
-After you've added the prefab to your project, nativate to ```Packages > Shiapra - NetSync Visibility``` in your Project Files, then drag and drop the ```NetSync Visibility Prefab``` onto your Avatar.
+After you've added the prefab to your project, navigate to ```Packages > Shiapra - NetSync Visibility``` in your Project Files, then drag and drop the ```NetSync Visibility Prefab``` onto your Avatar.
 
 Then Just drop whatever you want to hide under ```NetSync Visibility Prefab > NetSync Object``` on your avatar! 
 
@@ -68,7 +80,6 @@ If the toggle is a VRCFury toggle, you can do this by modifying the toggle to us
 Please note that this parameter is always being driven, so it can not be disabled outside of the NetSync Menu
 
 # Usage in Game
-
 You will find a new menu called ```NetSync``` with all the visibility settings.
 
 Changing between settings will cause all objects to breifly be disabled and re-enabled, this is intentional to make sure the NetSync_Toggle Boolean is always being written to & to avoid more complex logic that might break.
@@ -77,15 +88,17 @@ If this becomes an issue for you, or breaks certain prefabs, please make an issu
 ## Nothing Visible?
 Check to make sure the objects you're trying to toggle don't already have another toggle to enable or disable them, you might need to enable that toggle too, or remove it in unity.
 
----
+# Can I use this in a product?
+Yes! You are welcome to use NetSync Vsibility in your product!
 
-# How do I Get this?
-I've made a free repo for the Creator Companion!
+Ideally the end user should be directed to add NetSync Visibility to their project via the VCC URL, and modifications/additions you make should be additive to the base NetSync Visibility animator & Prefabs.
 
-Just add it to your VCC by going to: https://vcc.shia.gay/free
-or add it manually with the same URL
+Please credit the NetSync Visibility project on your product page if you use it in your product!
 
-## VRCFury
-You will need the VRCFury Repository too, so if you get an error, check that it’s on your VCC
+## Some things to keep in mind
+Please keep your modified versions of NetSync Visibility compatible with the NetSync Visibility Project. The goal of this system is to create a unified tool to sync with others in game, this becomes very difficult if your fork becomes incompatible with everyone elses!
 
-It can be added by visiting https://vrcfury.com/download or adding https://vcc.vrcfury.com to your VCC
+If you wish to integrate the controls into your own menus rather than use the included menu, please maintain feature parity. 
+
+The License for NetSync Visibility is Copyleft, any modifications you make should be available to the project. Please just fork this repository and commit your changes to your fork. If you're unfamiliar with github and forking, please just provide a copy of the modified animator, menus and prefabs if asked.
+
