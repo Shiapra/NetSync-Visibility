@@ -1,0 +1,590 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5023759893108039366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232164464974060282}
+  - component: {fileID: 5850828861514429839}
+  - component: {fileID: 952169358246710962}
+  - component: {fileID: 8842270423704016086}
+  - component: {fileID: 8208664596066101758}
+  - component: {fileID: 4203124135018932249}
+  - component: {fileID: 8812329948783830698}
+  m_Layer: 0
+  m_Name: NetSync - Select (Minimal)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1232164464974060282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5023759893108039366}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6770158685386216103}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5850828861514429839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5023759893108039366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1288.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 1552737554372231169
+  references:
+    version: 2
+    RefIds:
+    - rid: 1552737554372231169
+      type: {class: ApplyDuringUpload, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 0
+        action:
+          actions:
+          - rid: 1552737554372231170
+          - rid: 1552737554372231177
+          - rid: 4768251022341309160
+    - rid: 1552737554372231170
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 5023759893108039366}
+        mode: 0
+    - rid: 1552737554372231177
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 6053530908150706314}
+        mode: 0
+    - rid: 4768251022341309160
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 5500217314063305144}
+        mode: 1
+--- !u!114 &952169358246710962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5023759893108039366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1288.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 1552737554372231168
+  references:
+    version: 2
+    RefIds:
+    - rid: 1552737554372231168
+      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 3
+        name: NetSync/Secret Mode/Select/Add
+        state:
+          actions:
+          - rid: 4768251165577052247
+        saved: 0
+        slider: 0
+        sliderInactiveAtZero: 0
+        securityEnabled: 0
+        defaultOn: 0
+        includeInRest: 0
+        exclusiveOffState: 0
+        enableExclusiveTag: 0
+        exclusiveTag: 
+        resetPhysbones: []
+        hasExitTime: 0
+        enableIcon: 1
+        icon:
+          version: 1
+          fileID: 0
+          guid: 
+          id: e6a2fe169cf8e8bfb90b639c74e70e22|Packages/com.shiapra.netsync/Assets/Icons/NetSync
+            Icon Select Add.png
+          objRef: {fileID: 2800000, guid: e6a2fe169cf8e8bfb90b639c74e70e22, type: 3}
+        enableDriveGlobalParam: 0
+        driveGlobalParam: 
+        separateLocal: 1
+        localState:
+          actions:
+          - rid: 4768251165577052248
+        hasTransition: 0
+        transitionStateIn:
+          actions: []
+        transitionStateOut:
+          actions: []
+        transitionTimeIn: 0
+        transitionTimeOut: 0
+        localTransitionStateIn:
+          actions: []
+        localTransitionStateOut:
+          actions: []
+        localTransitionTimeIn: 0
+        localTransitionTimeOut: 0
+        simpleOutTransition: 1
+        defaultSliderValue: 0
+        useGlobalParam: 1
+        globalParam: NetSync_Select_Add
+        holdButton: 1
+        invertRestLogic: 0
+        expandIntoTransition: 1
+    - rid: 4768251165577052247
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 5500217314063305144}
+        mode: 0
+    - rid: 4768251165577052248
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 5500217314063305144}
+        mode: 0
+--- !u!114 &8842270423704016086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5023759893108039366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1288.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 1552737554372231168
+  references:
+    version: 2
+    RefIds:
+    - rid: 1552737554372231168
+      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 3
+        name: NetSync/Secret Mode/Select/Remove
+        state:
+          actions:
+          - rid: 4768251165577052245
+        saved: 0
+        slider: 0
+        sliderInactiveAtZero: 0
+        securityEnabled: 0
+        defaultOn: 0
+        includeInRest: 0
+        exclusiveOffState: 0
+        enableExclusiveTag: 0
+        exclusiveTag: 
+        resetPhysbones: []
+        hasExitTime: 0
+        enableIcon: 1
+        icon:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 1177b76f355db4e99ac8ddccb803aa52|Packages/com.shiapra.netsync/Assets/Icons/NetSync
+            Icon Select Remove.png
+          objRef: {fileID: 2800000, guid: 1177b76f355db4e99ac8ddccb803aa52, type: 3}
+        enableDriveGlobalParam: 0
+        driveGlobalParam: 
+        separateLocal: 1
+        localState:
+          actions:
+          - rid: 4768251165577052246
+        hasTransition: 0
+        transitionStateIn:
+          actions: []
+        transitionStateOut:
+          actions: []
+        transitionTimeIn: 0
+        transitionTimeOut: 0
+        localTransitionStateIn:
+          actions: []
+        localTransitionStateOut:
+          actions: []
+        localTransitionTimeIn: 0
+        localTransitionTimeOut: 0
+        simpleOutTransition: 1
+        defaultSliderValue: 0
+        useGlobalParam: 1
+        globalParam: NetSync_Select_Remove
+        holdButton: 1
+        invertRestLogic: 0
+        expandIntoTransition: 1
+    - rid: 4768251165577052245
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 5500217314063305144}
+        mode: 0
+    - rid: 4768251165577052246
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 5500217314063305144}
+        mode: 0
+--- !u!114 &8208664596066101758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5023759893108039366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1288.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 1552737554372231168
+  references:
+    version: 2
+    RefIds:
+    - rid: 1552737554372231168
+      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 3
+        name: NetSync/Secret Mode/Select/Block
+        state:
+          actions:
+          - rid: 4768251165577052243
+        saved: 0
+        slider: 0
+        sliderInactiveAtZero: 0
+        securityEnabled: 0
+        defaultOn: 0
+        includeInRest: 0
+        exclusiveOffState: 0
+        enableExclusiveTag: 0
+        exclusiveTag: 
+        resetPhysbones: []
+        hasExitTime: 0
+        enableIcon: 1
+        icon:
+          version: 1
+          fileID: 0
+          guid: 
+          id: f2c944a396cab35bdb663f9c2cb20c8e|Packages/com.shiapra.netsync/Assets/Icons/NetSync
+            Icon Select Block.png
+          objRef: {fileID: 2800000, guid: f2c944a396cab35bdb663f9c2cb20c8e, type: 3}
+        enableDriveGlobalParam: 0
+        driveGlobalParam: 
+        separateLocal: 1
+        localState:
+          actions:
+          - rid: 4768251165577052244
+        hasTransition: 0
+        transitionStateIn:
+          actions: []
+        transitionStateOut:
+          actions: []
+        transitionTimeIn: 0
+        transitionTimeOut: 0
+        localTransitionStateIn:
+          actions: []
+        localTransitionStateOut:
+          actions: []
+        localTransitionTimeIn: 0
+        localTransitionTimeOut: 0
+        simpleOutTransition: 1
+        defaultSliderValue: 0
+        useGlobalParam: 1
+        globalParam: NetSync_Select_Block
+        holdButton: 1
+        invertRestLogic: 0
+        expandIntoTransition: 1
+    - rid: 4768251165577052243
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 5500217314063305144}
+        mode: 0
+    - rid: 4768251165577052244
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 5500217314063305144}
+        mode: 0
+--- !u!114 &4203124135018932249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5023759893108039366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1288.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 1552737554372231168
+  references:
+    version: 2
+    RefIds:
+    - rid: 1552737554372231168
+      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 3
+        name: NetSync/Secret Mode/Select/Reset
+        state:
+          actions: []
+        saved: 0
+        slider: 0
+        sliderInactiveAtZero: 0
+        securityEnabled: 0
+        defaultOn: 0
+        includeInRest: 0
+        exclusiveOffState: 0
+        enableExclusiveTag: 0
+        exclusiveTag: 
+        resetPhysbones: []
+        hasExitTime: 0
+        enableIcon: 1
+        icon:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 0d8044806c5a568c7a2cff8eb1995ac9|Packages/com.shiapra.netsync/Assets/Icons/NetSync
+            Icon Select Reset.png
+          objRef: {fileID: 2800000, guid: 0d8044806c5a568c7a2cff8eb1995ac9, type: 3}
+        enableDriveGlobalParam: 0
+        driveGlobalParam: 
+        separateLocal: 0
+        localState:
+          actions: []
+        hasTransition: 0
+        transitionStateIn:
+          actions: []
+        transitionStateOut:
+          actions: []
+        transitionTimeIn: 0
+        transitionTimeOut: 0
+        localTransitionStateIn:
+          actions: []
+        localTransitionStateOut:
+          actions: []
+        localTransitionTimeIn: 0
+        localTransitionTimeOut: 0
+        simpleOutTransition: 1
+        defaultSliderValue: 0
+        useGlobalParam: 1
+        globalParam: NetSync_Select_Reset
+        holdButton: 1
+        invertRestLogic: 0
+        expandIntoTransition: 1
+--- !u!114 &8812329948783830698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5023759893108039366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1288.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 4768251541054816478
+  references:
+    version: 2
+    RefIds:
+    - rid: 4768251541054816478
+      type: {class: SetIcon, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 1
+        path: NetSync/Secret Mode/Select
+        icon:
+          version: 1
+          fileID: 0
+          guid: 
+          id: e6a2fe169cf8e8bfb90b639c74e70e22|Packages/com.shiapra.netsync/Assets/Icons/NetSync
+            Icon Select Add.png
+          objRef: {fileID: 2800000, guid: e6a2fe169cf8e8bfb90b639c74e70e22, type: 3}
+--- !u!1 &5500217314063305144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6770158685386216103}
+  - component: {fileID: 6132458367405944719}
+  m_Layer: 0
+  m_Name: Raycast Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6770158685386216103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500217314063305144}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4466829757336733710}
+  m_Father: {fileID: 1232164464974060282}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6132458367405944719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500217314063305144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1472509199, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDirection: {x: 0, y: 1, z: 0}
+  distance: 2
+  applyTransformScale: 0
+  collisionMode: 3
+  customCollisionLayers:
+    serializedVersion: 2
+    m_Bits: 1024
+  resultTransform: {fileID: 4466829757336733710}
+  applyRotation: 0
+  alignmentAxis: {x: 0, y: 1, z: 0}
+  behaviorOnMiss: 1
+  parameter: NetSync_Select_Selected
+  param_HitValue: 0
+  param_RatioValue: 0
+  param_DistanceValue: 0
+--- !u!1 &6053530908150706314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4466829757336733710}
+  m_Layer: 0
+  m_Name: Raycast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4466829757336733710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6053530908150706314}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6770158685386216103}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

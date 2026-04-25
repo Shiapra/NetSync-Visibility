@@ -84,3 +84,38 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 0
+  - name: NetSync_Select_Selected_Hit
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
+  - name: NetSync_Select_Selected_Memory
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
+  - name: NetSync_Select_Blocked_Memory
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
+  - name: NetSync_Select_Add
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
+  - name: NetSync_Select_Remove
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
+  - name: NetSync_Select_Block
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
+  - name: NetSync_Select_Reset
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
