@@ -19,6 +19,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 0
+  - name: NetSync_Toggle_Inverse
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: NetSync_Off
     valueType: 2
     saved: 0
