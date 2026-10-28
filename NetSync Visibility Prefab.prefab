@@ -1103,7 +1103,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Friends Only
+        name: NetSync/Secret Mode/Limit Sync to\n Friends Only
         state:
           actions: []
         saved: 1
@@ -1177,7 +1177,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Save Between Modes
+        name: NetSync/Secret Mode/Save Synced\n Between Modes
         state:
           actions: []
         saved: 1
