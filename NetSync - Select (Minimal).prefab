@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -127,7 +127,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Select/Add
+        name: NetSync/Select/Add
         state:
           actions:
           - rid: 4768251165577052247
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -223,7 +223,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Select/Remove
+        name: NetSync/Select/Remove
         state:
           actions:
           - rid: 4768251165577052245
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -319,7 +319,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Select/Block
+        name: NetSync/Select/Block
         state:
           actions:
           - rid: 4768251165577052243
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -415,7 +415,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Select/Reset
+        name: NetSync/Select/Reset
         state:
           actions: []
         saved: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -489,7 +489,7 @@ MonoBehaviour:
       type: {class: SetIcon, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 1
-        path: NetSync/Secret Mode/Select
+        path: NetSync/Select
         icon:
           version: 1
           fileID: 0
@@ -542,6 +542,8 @@ MonoBehaviour:
   m_Script: {fileID: 1472509199, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 0
+  rootTransform: {fileID: 0}
   raycastDirection: {x: 0, y: 1, z: 0}
   distance: 2
   applyTransformScale: 0
