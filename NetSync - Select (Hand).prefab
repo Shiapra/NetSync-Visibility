@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3077192972798157955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792478009553907867}
+  m_Layer: 0
+  m_Name: Local Hit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1792478009553907867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3077192972798157955}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3284992262649956734}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5023759893108039366
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,6 +46,7 @@ GameObject:
   - component: {fileID: 8208664596066101758}
   - component: {fileID: 4203124135018932249}
   - component: {fileID: 8812329948783830698}
+  - component: {fileID: 5391258063723983530}
   m_Layer: 0
   m_Name: NetSync - Select (Hand)
   m_TagString: Untagged
@@ -52,7 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -70,6 +102,7 @@ MonoBehaviour:
           - rid: 1552737554372231170
           - rid: 1552737554372231177
           - rid: 4768251022341309160
+          - rid: 4625732823644110987
     - rid: 1552737554372231170
       type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
       data:
@@ -90,6 +123,16 @@ MonoBehaviour:
         remoteOnly: 0
         obj: {fileID: 6053530908150706314}
         mode: 0
+    - rid: 4625732823644110987
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 1893433201519918682}
+        mode: 1
     - rid: 4768251022341309160
       type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
       data:
@@ -114,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -127,7 +170,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Select/Add
+        name: NetSync/Select/Add
         state:
           actions:
           - rid: 4768251165577052247
@@ -156,6 +199,7 @@ MonoBehaviour:
         localState:
           actions:
           - rid: 4768251165577052248
+          - rid: 4625732825004114494
         hasTransition: 0
         transitionStateIn:
           actions: []
@@ -176,6 +220,16 @@ MonoBehaviour:
         holdButton: 1
         invertRestLogic: 0
         expandIntoTransition: 1
+    - rid: 4625732825004114494
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 1893433201519918682}
+        mode: 0
     - rid: 4768251165577052247
       type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
       data:
@@ -210,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -223,7 +277,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Select/Remove
+        name: NetSync/Select/Remove
         state:
           actions:
           - rid: 4768251165577052245
@@ -252,6 +306,7 @@ MonoBehaviour:
         localState:
           actions:
           - rid: 4768251165577052246
+          - rid: 4625732825004114495
         hasTransition: 0
         transitionStateIn:
           actions: []
@@ -272,6 +327,16 @@ MonoBehaviour:
         holdButton: 1
         invertRestLogic: 0
         expandIntoTransition: 1
+    - rid: 4625732825004114495
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 1893433201519918682}
+        mode: 0
     - rid: 4768251165577052245
       type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
       data:
@@ -306,7 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -319,7 +384,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Select/Block
+        name: NetSync/Select/Block
         state:
           actions:
           - rid: 4768251165577052243
@@ -348,6 +413,7 @@ MonoBehaviour:
         localState:
           actions:
           - rid: 4768251165577052244
+          - rid: 4625732825004114496
         hasTransition: 0
         transitionStateIn:
           actions: []
@@ -368,6 +434,16 @@ MonoBehaviour:
         holdButton: 1
         invertRestLogic: 0
         expandIntoTransition: 1
+    - rid: 4625732825004114496
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 1893433201519918682}
+        mode: 0
     - rid: 4768251165577052243
       type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
       data:
@@ -402,7 +478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -415,7 +491,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Select/Reset
+        name: NetSync/Select/Reset
         state:
           actions: []
         saved: 0
@@ -476,7 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -489,7 +565,7 @@ MonoBehaviour:
       type: {class: SetIcon, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 1
-        path: NetSync/Secret Mode/Select
+        path: NetSync/Select
         icon:
           version: 1
           fileID: 0
@@ -497,6 +573,90 @@ MonoBehaviour:
           id: e6a2fe169cf8e8bfb90b639c74e70e22|Packages/com.shiapra.netsync/Assets/Icons/NetSync
             Icon Select Add.png
           objRef: {fileID: 2800000, guid: e6a2fe169cf8e8bfb90b639c74e70e22, type: 3}
+--- !u!114 &5391258063723983530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5023759893108039366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1475.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 4625732823644110985
+  references:
+    version: 2
+    RefIds:
+    - rid: 4625732823644110985
+      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 3
+        name: 
+        state:
+          actions:
+          - rid: 4625732823644110986
+        saved: 0
+        slider: 0
+        sliderInactiveAtZero: 0
+        securityEnabled: 0
+        defaultOn: 0
+        includeInRest: 0
+        exclusiveOffState: 0
+        enableExclusiveTag: 0
+        exclusiveTag: 
+        resetPhysbones: []
+        hasExitTime: 0
+        enableIcon: 0
+        icon:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 
+          objRef: {fileID: 0}
+        enableDriveGlobalParam: 0
+        driveGlobalParam: 
+        separateLocal: 0
+        localState:
+          actions: []
+        hasTransition: 0
+        transitionStateIn:
+          actions: []
+        transitionStateOut:
+          actions: []
+        transitionTimeIn: 0
+        transitionTimeOut: 0
+        localTransitionStateIn:
+          actions: []
+        localTransitionStateOut:
+          actions: []
+        localTransitionTimeIn: 0
+        localTransitionTimeOut: 0
+        simpleOutTransition: 1
+        defaultSliderValue: 0
+        useGlobalParam: 1
+        globalParam: NetSync_Select_Indicator_Hit
+        holdButton: 0
+        invertRestLogic: 0
+        expandIntoTransition: 1
+    - rid: 4625732823644110986
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
+        obj: {fileID: 1893433201519918682}
+        mode: 0
 --- !u!1 &5500217314063305144
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +667,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6770158685386216103}
   - component: {fileID: 7165550254118038463}
-  - component: {fileID: 6132458367405944719}
+  - component: {fileID: 3360463436196620454}
+  - component: {fileID: 5848594591758953815}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -545,7 +706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1288.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -585,7 +746,7 @@ MonoBehaviour:
         fallbackBones: 
         keepBoneOffsets2: 0
         linkMode: 4
---- !u!114 &6132458367405944719
+--- !u!114 &3360463436196620454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -597,6 +758,37 @@ MonoBehaviour:
   m_Script: {fileID: 1472509199, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 1
+  rootTransform: {fileID: 4466829757336733710}
+  raycastDirection: {x: 0, y: 0, z: 1}
+  distance: 2
+  applyTransformScale: 0
+  collisionMode: 3
+  customCollisionLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  resultTransform: {fileID: 3284992262649956734}
+  applyRotation: 1
+  alignmentAxis: {x: 0, y: 0, z: -1}
+  behaviorOnMiss: 1
+  parameter: NetSync_Select_Indicator
+  param_HitValue: 0
+  param_RatioValue: 0
+  param_DistanceValue: 0
+--- !u!114 &5848594591758953815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500217314063305144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1472509199, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  rootTransform: {fileID: 3284992262649956734}
   raycastDirection: {x: 0, y: 0, z: 1}
   distance: 2
   applyTransformScale: 0
@@ -604,7 +796,7 @@ MonoBehaviour:
   customCollisionLayers:
     serializedVersion: 2
     m_Bits: 1024
-  resultTransform: {fileID: 4466829757336733710}
+  resultTransform: {fileID: 1792478009553907867}
   applyRotation: 0
   alignmentAxis: {x: 0, y: 1, z: 0}
   behaviorOnMiss: 1
@@ -640,6 +832,120 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3284992262649956734}
   m_Father: {fileID: 6770158685386216103}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9013911801937570586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3284992262649956734}
+  m_Layer: 0
+  m_Name: Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3284992262649956734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9013911801937570586}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1792478009553907867}
+  - {fileID: 1228642515095528672}
+  m_Father: {fileID: 4466829757336733710}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1623471416618468107
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3284992262649956734}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b32205add73367dea4cdf8a56f0cad8,
+        type: 3}
+      propertyPath: m_Name
+      value: NetSync Arrow
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b32205add73367dea4cdf8a56f0cad8, type: 3}
+--- !u!4 &1228642515095528672 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b32205add73367dea4cdf8a56f0cad8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1623471416618468107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1893433201519918682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b32205add73367dea4cdf8a56f0cad8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1623471416618468107}
+  m_PrefabAsset: {fileID: 0}
