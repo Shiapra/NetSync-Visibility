@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1265.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1265.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -113,7 +113,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Auto Sync
+        name: NetSync/Settings/Auto Sync
         state:
           actions:
           - rid: 6137261751279288391
@@ -241,9 +241,11 @@ MonoBehaviour:
   shapeType: 0
   radius: 1.5
   height: 2
+  size: {x: 1, y: 1, z: 1}
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - NetSync_Auto
 --- !u!1 &6532469934423305715
@@ -294,14 +296,22 @@ MonoBehaviour:
   shapeType: 0
   radius: 1.5
   height: 2
+  size: {x: 1, y: 1, z: 1}
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - NetSync_Auto
   - NetSync_Secret
   allowSelf: 0
   allowOthers: 1
+  useFaceProximity: 0
   receiverType: 0
   parameter: NetSync_Secret_Auto_Received
   minVelocity: 0.05
+  writeToMaterials: 0
+  writeToMaterialsContactTags: 0
+  separateShaderParameter: 
+  shaderTargetRenderers: []
+  advancedParameters: 0
