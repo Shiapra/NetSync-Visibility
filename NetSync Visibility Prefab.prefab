@@ -48,6 +48,7 @@ MonoBehaviour:
   shapeType: 0
   radius: 1.5
   height: 2
+  size: {x: 1, y: 1, z: 1}
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
@@ -102,6 +103,7 @@ MonoBehaviour:
   shapeType: 0
   radius: 0.5
   height: 2
+  size: {x: 1, y: 1, z: 1}
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
@@ -110,9 +112,15 @@ MonoBehaviour:
   - NetSync_Secret_Alert
   allowSelf: 0
   allowOthers: 1
+  useFaceProximity: 0
   receiverType: 0
   parameter: NetSync_Secret_Alert
   minVelocity: 0.05
+  writeToMaterials: 0
+  writeToMaterialsContactTags: 0
+  separateShaderParameter: 
+  shaderTargetRenderers: []
+  advancedParameters: 0
 --- !u!1 &1951243668983531249
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,6 +169,7 @@ MonoBehaviour:
   shapeType: 0
   radius: 1.5
   height: 2
+  size: {x: 1, y: 1, z: 1}
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
@@ -215,6 +224,7 @@ MonoBehaviour:
   shapeType: 0
   radius: 0.5
   height: 2
+  size: {x: 1, y: 1, z: 1}
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
@@ -223,9 +233,15 @@ MonoBehaviour:
   - NetSync_Secret
   allowSelf: 0
   allowOthers: 1
+  useFaceProximity: 0
   receiverType: 0
   parameter: NetSync_Secret_Received
   minVelocity: 0.05
+  writeToMaterials: 0
+  writeToMaterialsContactTags: 0
+  separateShaderParameter: 
+  shaderTargetRenderers: []
+  advancedParameters: 0
 --- !u!1 &4422382174340331564
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -311,8 +327,15 @@ MonoBehaviour:
         toggleParam: 
         rootObjOverride: {fileID: 0}
         rootBindingsApplyToAvatar: 0
+        overwriteLocomotion: 1
         rewriteBindings: []
         allowMissingAssets: 0
+        injectParams: []
+        faceTrackingMeshes: []
+        faceTrackingBlendshapeSets: []
+        faceTrackingParameterBehaviors: []
+        visemeDampenMode: 0
+        visemeDampenAmount: 1
         injectSpsDepthParam: 
         injectSpsVelocityParam: 
         controller:
@@ -351,7 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -499,7 +522,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6934755755938640530}
-  - component: {fileID: 4960807803139289934}
   - component: {fileID: 5778692477032638278}
   - component: {fileID: 7006999361502008225}
   - component: {fileID: 3104307723170009054}
@@ -531,80 +553,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4282417236359132305}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4960807803139289934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9129034151085281484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 3
-  unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
-  somethingIsBroken: 0
-  config:
-    features: []
-  content:
-    rid: 4929651745309327870
-  references:
-    version: 2
-    RefIds:
-    - rid: 4929651745309327870
-      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
-      data:
-        version: 3
-        name: NetSync/Off
-        state:
-          actions: []
-        saved: 0
-        slider: 0
-        sliderInactiveAtZero: 0
-        securityEnabled: 0
-        defaultOn: 1
-        includeInRest: 0
-        exclusiveOffState: 1
-        enableExclusiveTag: 1
-        exclusiveTag: NetSync_Setting
-        resetPhysbones: []
-        hasExitTime: 0
-        enableIcon: 1
-        icon:
-          version: 1
-          fileID: 0
-          guid: 
-          id: 4f62c6e6d367a674fbc8d62506572acf|Packages/com.shiapra.netsync/Assets/Icons/NetSync
-            Icon Disabled.png
-          objRef: {fileID: 2800000, guid: 4f62c6e6d367a674fbc8d62506572acf, type: 3}
-        enableDriveGlobalParam: 0
-        driveGlobalParam: 
-        separateLocal: 0
-        localState:
-          actions: []
-        hasTransition: 0
-        transitionStateIn:
-          actions: []
-        transitionStateOut:
-          actions: []
-        transitionTimeIn: 0
-        transitionTimeOut: 0
-        localTransitionStateIn:
-          actions: []
-        localTransitionStateOut:
-          actions: []
-        localTransitionTimeIn: 0
-        localTransitionTimeOut: 0
-        simpleOutTransition: 1
-        defaultSliderValue: 0
-        useGlobalParam: 1
-        globalParam: NetSync_Off
-        holdButton: 0
-        invertRestLogic: 0
-        expandIntoTransition: 1
 --- !u!114 &5778692477032638278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,7 +567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -642,7 +590,7 @@ MonoBehaviour:
         defaultOn: 0
         includeInRest: 0
         exclusiveOffState: 0
-        enableExclusiveTag: 1
+        enableExclusiveTag: 0
         exclusiveTag: NetSync_Setting
         resetPhysbones: []
         hasExitTime: 0
@@ -693,7 +641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -716,7 +664,7 @@ MonoBehaviour:
         defaultOn: 0
         includeInRest: 0
         exclusiveOffState: 0
-        enableExclusiveTag: 1
+        enableExclusiveTag: 0
         exclusiveTag: NetSync_Setting
         resetPhysbones: []
         hasExitTime: 0
@@ -767,7 +715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -790,7 +738,7 @@ MonoBehaviour:
         defaultOn: 0
         includeInRest: 0
         exclusiveOffState: 0
-        enableExclusiveTag: 1
+        enableExclusiveTag: 0
         exclusiveTag: NetSync_Setting
         resetPhysbones: []
         hasExitTime: 0
@@ -841,7 +789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -864,7 +812,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Secret Mode
+        name: NetSync/Secret Mode
         state:
           actions:
           - rid: 4929651745309327881
@@ -876,7 +824,7 @@ MonoBehaviour:
         defaultOn: 0
         includeInRest: 0
         exclusiveOffState: 0
-        enableExclusiveTag: 1
+        enableExclusiveTag: 0
         exclusiveTag: NetSync_Setting
         resetPhysbones: []
         hasExitTime: 0
@@ -959,7 +907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -972,7 +920,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Send Secret
+        name: NetSync/Settings/Send Secret
         state:
           actions:
           - rid: 6137261992385970203
@@ -1055,7 +1003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -1090,7 +1038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -1103,7 +1051,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Limit Sync to\n Friends Only
+        name: NetSync/Settings/Limit Sync to\n Friends Only
         state:
           actions: []
         saved: 1
@@ -1164,7 +1112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -1177,7 +1125,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: NetSync/Secret Mode/Save Synced\n Between Modes
+        name: NetSync/Settings/Save Synced\n Between Modes
         state:
           actions: []
         saved: 1
@@ -1238,7 +1186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1475.0
   somethingIsBroken: 0
   config:
     features: []
@@ -1251,7 +1199,7 @@ MonoBehaviour:
       type: {class: SetIcon, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 1
-        path: NetSync/Secret Mode
+        path: NetSync/Settings
         icon:
           version: 1
           fileID: 0
