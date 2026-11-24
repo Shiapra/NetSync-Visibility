@@ -1204,9 +1204,9 @@ MonoBehaviour:
           version: 1
           fileID: 0
           guid: 
-          id: 42ebb8fd571b05ba0982b991c841fedf|Packages/com.shiapra.netsync/Assets/Icons/NetSync
-            Icon Secret Mode.png
-          objRef: {fileID: 2800000, guid: 42ebb8fd571b05ba0982b991c841fedf, type: 3}
+          id: e0c9bbb52dbd9a4ba9bddfd469ee1680|Packages/com.shiapra.netsync/Assets/Icons/NetSync
+            Icon Settings.png
+          objRef: {fileID: 2800000, guid: e0c9bbb52dbd9a4ba9bddfd469ee1680, type: 3}
 --- !u!1001 &3803367281646870404
 PrefabInstance:
   m_ObjectHideFlags: 0
